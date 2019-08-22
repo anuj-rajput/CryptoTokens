@@ -13,6 +13,11 @@
 		2828E208230E88B900B2C532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2828E207230E88B900B2C532 /* Assets.xcassets */; };
 		2828E20B230E88B900B2C532 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2828E209230E88B900B2C532 /* LaunchScreen.storyboard */; };
 		2828E216230E88B900B2C532 /* CryptoIconsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E215230E88B900B2C532 /* CryptoIconsTests.swift */; };
+		2828E226230E8E2700B2C532 /* HomeViewController+TableViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E225230E8E2700B2C532 /* HomeViewController+TableViewProtocols.swift */; };
+		2828E228230E901F00B2C532 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E227230E901F00B2C532 /* Constants.swift */; };
+		2828E22A230E950100B2C532 /* icons.json in Resources */ = {isa = PBXBuildFile; fileRef = 2828E229230E950100B2C532 /* icons.json */; };
+		2828E22D230E952200B2C532 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E22C230E952200B2C532 /* Icon.swift */; };
+		2828E230230E978200B2C532 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E22F230E978200B2C532 /* FileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		2828E211230E88B900B2C532 /* CryptoIconsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoIconsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2828E215230E88B900B2C532 /* CryptoIconsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoIconsTests.swift; sourceTree = "<group>"; };
 		2828E217230E88B900B2C532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2828E225230E8E2700B2C532 /* HomeViewController+TableViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+TableViewProtocols.swift"; sourceTree = "<group>"; };
+		2828E227230E901F00B2C532 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2828E229230E950100B2C532 /* icons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = icons.json; sourceTree = "<group>"; };
+		2828E22C230E952200B2C532 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		2828E22F230E978200B2C532 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +88,11 @@
 			isa = PBXGroup;
 			children = (
 				2828E221230E8A5E00B2C532 /* Application */,
+				2828E223230E8AA900B2C532 /* Controllers */,
+				2828E22B230E951300B2C532 /* Models */,
 				2828E220230E88C900B2C532 /* Resources */,
 				2828E222230E8A9600B2C532 /* Storyboards */,
-				2828E223230E8AA900B2C532 /* Controllers */,
+				2828E22E230E96EF00B2C532 /* Uitilities */,
 			);
 			path = CryptoIcons;
 			sourceTree = "<group>";
@@ -109,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				2828E200230E88B900B2C532 /* AppDelegate.swift */,
+				2828E227230E901F00B2C532 /* Constants.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -133,8 +146,25 @@
 			isa = PBXGroup;
 			children = (
 				2828E202230E88B900B2C532 /* HomeViewController.swift */,
+				2828E225230E8E2700B2C532 /* HomeViewController+TableViewProtocols.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		2828E22B230E951300B2C532 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2828E22C230E952200B2C532 /* Icon.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2828E22E230E96EF00B2C532 /* Uitilities */ = {
+			isa = PBXGroup;
+			children = (
+				2828E22F230E978200B2C532 /* FileManager.swift */,
+			);
+			path = Uitilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,7 +270,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2828E203230E88B900B2C532 /* HomeViewController.swift in Sources */,
+				2828E226230E8E2700B2C532 /* HomeViewController+TableViewProtocols.swift in Sources */,
 				2828E201230E88B900B2C532 /* AppDelegate.swift in Sources */,
+				2828E230230E978200B2C532 /* FileManager.swift in Sources */,
+				2828E22D230E952200B2C532 /* Icon.swift in Sources */,
+				2828E228230E901F00B2C532 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
