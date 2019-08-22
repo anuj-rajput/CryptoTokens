@@ -19,6 +19,8 @@ enum Constants {
         static let CreateAccount = NSLocalizedString("Create Account", comment: "")
         static let Username = NSLocalizedString("Username", comment: "")
         static let Password = NSLocalizedString("Password", comment: "")
+        static let Error = NSLocalizedString("Error", comment: "")
+        static let UserPassNotFound = NSLocalizedString("Username/Password not found", comment: "")
     }
     
     enum Duration {
@@ -36,4 +38,12 @@ enum Constants {
     enum Files {
         static let icons = "icons"
     }
+    
+    enum Keys {
+        static let salt = "CoyXFQj+(o.nUNQhVP7N"
+    }
+}
+
+struct KeychainConfiguration {
+    static let serviceName = "CryptoIcons"
 }

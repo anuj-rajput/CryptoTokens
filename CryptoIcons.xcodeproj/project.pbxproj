@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,12 @@
 		2828E23A230EB9CE00B2C532 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E239230EB9CE00B2C532 /* LandingViewController.swift */; };
 		2828E23C230EB9DF00B2C532 /* LoginSingupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E23B230EB9DF00B2C532 /* LoginSingupViewController.swift */; };
 		2828E23E230EC56000B2C532 /* LoginSignupViewController+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E23D230EC56000B2C532 /* LoginSignupViewController+Protocols.swift */; };
+		2828E24F230EDF3600B2C532 /* InternetAuthenticationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E249230EDF3600B2C532 /* InternetAuthenticationType.swift */; };
+		2828E250230EDF3600B2C532 /* SecureStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E24A230EDF3600B2C532 /* SecureStore.swift */; };
+		2828E251230EDF3600B2C532 /* SecureStoreQueryable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E24B230EDF3600B2C532 /* SecureStoreQueryable.swift */; };
+		2828E252230EDF3600B2C532 /* SecureStoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E24D230EDF3600B2C532 /* SecureStoreError.swift */; };
+		2828E253230EDF3600B2C532 /* InternetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E24E230EDF3600B2C532 /* InternetProtocol.swift */; };
+		2828E256230EE12200B2C532 /* AESCrypter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E255230EE12200B2C532 /* AESCrypter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +62,13 @@
 		2828E239230EB9CE00B2C532 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		2828E23B230EB9DF00B2C532 /* LoginSingupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSingupViewController.swift; sourceTree = "<group>"; };
 		2828E23D230EC56000B2C532 /* LoginSignupViewController+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginSignupViewController+Protocols.swift"; sourceTree = "<group>"; };
+		2828E249230EDF3600B2C532 /* InternetAuthenticationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetAuthenticationType.swift; sourceTree = "<group>"; };
+		2828E24A230EDF3600B2C532 /* SecureStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureStore.swift; sourceTree = "<group>"; };
+		2828E24B230EDF3600B2C532 /* SecureStoreQueryable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureStoreQueryable.swift; sourceTree = "<group>"; };
+		2828E24C230EDF3600B2C532 /* SecureStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecureStore.h; sourceTree = "<group>"; };
+		2828E24D230EDF3600B2C532 /* SecureStoreError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureStoreError.swift; sourceTree = "<group>"; };
+		2828E24E230EDF3600B2C532 /* InternetProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetProtocol.swift; sourceTree = "<group>"; };
+		2828E255230EE12200B2C532 /* AESCrypter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AESCrypter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +187,7 @@
 		2828E22E230E96EF00B2C532 /* Uitilities */ = {
 			isa = PBXGroup;
 			children = (
+				2828E254230EE11000B2C532 /* AESCrypter */,
 				2828E232230EB75000B2C532 /* Keychain */,
 				2828E22F230E978200B2C532 /* FileManager.swift */,
 				2828E235230EB88C00B2C532 /* UIViewController+Extension.swift */,
@@ -184,6 +198,12 @@
 		2828E232230EB75000B2C532 /* Keychain */ = {
 			isa = PBXGroup;
 			children = (
+				2828E249230EDF3600B2C532 /* InternetAuthenticationType.swift */,
+				2828E24E230EDF3600B2C532 /* InternetProtocol.swift */,
+				2828E24C230EDF3600B2C532 /* SecureStore.h */,
+				2828E24A230EDF3600B2C532 /* SecureStore.swift */,
+				2828E24D230EDF3600B2C532 /* SecureStoreError.swift */,
+				2828E24B230EDF3600B2C532 /* SecureStoreQueryable.swift */,
 				2828E233230EB76700B2C532 /* KeychainPasswordItem.swift */,
 			);
 			path = Keychain;
@@ -204,6 +224,14 @@
 				2828E23D230EC56000B2C532 /* LoginSignupViewController+Protocols.swift */,
 			);
 			path = LoginSignup;
+			sourceTree = "<group>";
+		};
+		2828E254230EE11000B2C532 /* AESCrypter */ = {
+			isa = PBXGroup;
+			children = (
+				2828E255230EE12200B2C532 /* AESCrypter.swift */,
+			);
+			path = AESCrypter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,17 +336,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2828E24F230EDF3600B2C532 /* InternetAuthenticationType.swift in Sources */,
 				2828E236230EB88C00B2C532 /* UIViewController+Extension.swift in Sources */,
 				2828E23E230EC56000B2C532 /* LoginSignupViewController+Protocols.swift in Sources */,
 				2828E203230E88B900B2C532 /* HomeViewController.swift in Sources */,
 				2828E23C230EB9DF00B2C532 /* LoginSingupViewController.swift in Sources */,
 				2828E226230E8E2700B2C532 /* HomeViewController+Protocols.swift in Sources */,
+				2828E252230EDF3600B2C532 /* SecureStoreError.swift in Sources */,
 				2828E201230E88B900B2C532 /* AppDelegate.swift in Sources */,
 				2828E234230EB76700B2C532 /* KeychainPasswordItem.swift in Sources */,
 				2828E230230E978200B2C532 /* FileManager.swift in Sources */,
+				2828E256230EE12200B2C532 /* AESCrypter.swift in Sources */,
 				2828E22D230E952200B2C532 /* Icon.swift in Sources */,
 				2828E23A230EB9CE00B2C532 /* LandingViewController.swift in Sources */,
+				2828E253230EDF3600B2C532 /* InternetProtocol.swift in Sources */,
+				2828E251230EDF3600B2C532 /* SecureStoreQueryable.swift in Sources */,
 				2828E228230E901F00B2C532 /* Constants.swift in Sources */,
+				2828E250230EDF3600B2C532 /* SecureStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
