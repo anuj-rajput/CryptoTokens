@@ -1,0 +1,102 @@
+[
+  {
+    "name": "PACcoin",
+    "subscript": "$pac",
+    "symbol": "$pac"
+  },
+  {
+    "name": "0xBitcoin",
+    "subscript": "0xbtc",
+    "symbol": "0xbtc"
+  },
+  {
+    "name": "Argentum",
+    "subscript": "arg",
+    "symbol": "arg"
+  },
+  {
+    "name": "Cosmos",
+    "subscript": "atom",
+    "symbol": "atom"
+  },
+  {
+    "name": "Aywa",
+    "subscript": "aywa",
+    "symbol": "aywa"
+  },
+  {
+    "name": "BCBC",
+    "subscript": "bcbc",
+    "symbol": "bcbc"
+  },
+  {
+    "name": "Booty",
+    "subscript": "booty",
+    "symbol": "booty"
+  },
+  {
+    "name": "Bitcloud",
+    "subscript": "btdx",
+    "symbol": "btdx"
+  },
+  {
+    "name": "BitTorrent",
+    "subscript": "btt",
+    "symbol": "btt"
+  },
+  {
+    "name": "CoinCollect",
+    "subscript": "cc",
+    "symbol": "cc"
+  },
+  {
+    "name": "Hut34 Entropy",
+    "subscript": "entrp",
+    "symbol": "entrp"
+  },
+  {
+    "name": "Fujicoin",
+    "subscript": "fjc",
+    "symbol": "fjc"
+  },
+  {
+    "name": "GLX Token",
+    "subscript": "glxt",
+    "symbol": "glxt"
+  },
+  {
+    "name": "Dragonereum Gold",
+    "subscript": "gold",
+    "symbol": "gold"
+  },
+  {
+    "name": "Highcoin",
+    "subscript": "hight",
+    "symbol": "hight"
+  },
+  {
+    "name": "Inlock Token",
+    "subscript": "ilk",
+    "symbol": "ilk"
+  },
+  {
+    "name": "Matic Network",
+    "subscript": "matic",
+    "symbol": "matic"
+  },
+  {
+    "name": "Masari",
+    "subscript": "msr",
+    "symbol": "msr"
+  },
+  {
+    "name": "Pascalcoin",
+    "subscript": "pasc",
+    "symbol": "pasc"
+  },
+  {
+    "name": "Pungo Token",
+    "subscript": "pungo",
+    "symbol": "pungo"
+  }
+]

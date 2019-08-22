@@ -99,6 +99,7 @@
 			children = (
 				2828E207230E88B900B2C532 /* Assets.xcassets */,
 				2828E209230E88B900B2C532 /* LaunchScreen.storyboard */,
+				2828E229230E950100B2C532 /* icons.json */,
 				2828E20C230E88B900B2C532 /* Info.plist */,
 			);
 			path = Resources;
@@ -219,6 +220,7 @@
 			files = (
 				2828E20B230E88B900B2C532 /* LaunchScreen.storyboard in Resources */,
 				2828E208230E88B900B2C532 /* Assets.xcassets in Resources */,
+				2828E22A230E950100B2C532 /* icons.json in Resources */,
 				2828E206230E88B900B2C532 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
