@@ -10,6 +10,15 @@ import Foundation
 
 enum Constants {
     
+    enum Strings {
+        static let SectionHeader = NSLocalizedString("My Tokens", comment: "")
+        static let ShowHashButton = NSLocalizedString("Show Hash", comment: "")
+    }
+    
+    enum Duration {
+        static let longPressDuration = 1.0
+    }
+    
     enum ReuseIdentifiers {
         static let HomeTableViewCell = "HomeTableViewCell"
     }

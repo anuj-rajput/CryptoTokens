@@ -27,4 +27,11 @@ extension HomeViewController: UITableViewDataSource {
 
 extension HomeViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return Constants.Strings.SectionHeader
+    }
+}
+
+extension HomeViewController: UIGestureRecognizerDelegate {
+    
 }

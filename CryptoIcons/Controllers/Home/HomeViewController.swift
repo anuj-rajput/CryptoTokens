@@ -19,7 +19,6 @@ class HomeViewController: UIViewController {
     // MARK: Initializer
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -27,9 +26,15 @@ class HomeViewController: UIViewController {
     }
     
     // MARK: View Hierarchy
+    override func loadView() {
+        super.loadView()
+        loadTableView()
+        loadUI()
+        configureLongPressGesture()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadTableView()
         loadData()
     }
     
@@ -45,11 +50,44 @@ class HomeViewController: UIViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: Constants.ReuseIdentifiers.HomeTableViewCell)
     }
     
+    private func loadUI() {
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: Constants.Strings.ShowHashButton, style: .plain, target: self, action: #selector(showHashButtonTapped))
+    }
+    
     private func loadData() {
         if let icons = FileManager.getIconsFromStub() {
             self.icons = icons
             tableView.reloadData()
         }
+    }
+    
+    private func configureLongPressGesture() {
+        let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPressGesture))
+        longPressGesture.minimumPressDuration = Constants.Duration.longPressDuration
+        longPressGesture.delegate = self
+        tableView.addGestureRecognizer(longPressGesture)
+    }
+    
+    // MARK: Actions
+    @objc
+    func showHashButtonTapped() {
+        // TODO: Show hash in action controller
+    }
+    
+    @objc
+    func handleLongPressGesture(_ gestureRecognizer: UILongPressGestureRecognizer) {
+        if gestureRecognizer.state == .began {
+            let touchPoint = gestureRecognizer.location(in: tableView)
+            if let indexPath = tableView.indexPathForRow(at: touchPoint) {
+                presentDetailView(from: indexPath)
+            }
+        }
+    }
+    
+    // MARK: Navigation
+    func presentDetailView(from indexPath: IndexPath) {
+        // TODO: Presenting Detail View Logic
+        print(indexPath.row)
     }
 }
 
