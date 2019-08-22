@@ -32,8 +32,18 @@ class LandingViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    
     // MARK: Private Methods
-    func loadButtons() {
+    private func loadButtons() {
         for button in buttons {
             switch button.tag {
             case 1: button.setTitle(Constants.Strings.NewAccount, for: .normal)
@@ -42,7 +52,7 @@ class LandingViewController: UIViewController {
             }
         }
     }
-
+    
     // MARK: Actions
     @IBAction func buttonTapped(_ sender: UIButton) {
         switch sender.tag {
