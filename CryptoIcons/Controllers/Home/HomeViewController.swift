@@ -51,6 +51,7 @@ class HomeViewController: UIViewController {
     }
     
     private func loadUI() {
+        self.navigationItem.hidesBackButton = true
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: Constants.Strings.ShowHashButton, style: .plain, target: self, action: #selector(showHashButtonTapped))
     }
     
@@ -88,6 +89,10 @@ class HomeViewController: UIViewController {
     func presentDetailView(from indexPath: IndexPath) {
         // TODO: Presenting Detail View Logic
         print(indexPath.row)
+        let alertController = UIAlertController(title: "nil", message:"Long-Press Gesture Detected", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default,handler: nil))
+        
+        present(alertController, animated: true, completion: nil)
     }
 }
 

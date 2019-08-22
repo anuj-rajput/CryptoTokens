@@ -13,6 +13,12 @@ enum Constants {
     enum Strings {
         static let SectionHeader = NSLocalizedString("My Tokens", comment: "")
         static let ShowHashButton = NSLocalizedString("Show Hash", comment: "")
+        static let Okay = NSLocalizedString("Okay", comment: "")
+        static let NewAccount = NSLocalizedString("New Account", comment: "")
+        static let SignIn = NSLocalizedString("Sign In", comment: "")
+        static let CreateAccount = NSLocalizedString("Create Account", comment: "")
+        static let Username = NSLocalizedString("Username", comment: "")
+        static let Password = NSLocalizedString("Password", comment: "")
     }
     
     enum Duration {

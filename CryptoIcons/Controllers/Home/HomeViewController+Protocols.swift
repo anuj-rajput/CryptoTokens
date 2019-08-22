@@ -1,5 +1,5 @@
 //
-//  HomeViewController+TableViewProtocols.swift
+//  HomeViewController+Protocols.swift
 //  CryptoIcons
 //
 //  Created by Anuj Rajput on 22/08/19.

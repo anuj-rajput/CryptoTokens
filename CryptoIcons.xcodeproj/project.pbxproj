@@ -13,11 +13,16 @@
 		2828E208230E88B900B2C532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2828E207230E88B900B2C532 /* Assets.xcassets */; };
 		2828E20B230E88B900B2C532 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2828E209230E88B900B2C532 /* LaunchScreen.storyboard */; };
 		2828E216230E88B900B2C532 /* CryptoIconsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E215230E88B900B2C532 /* CryptoIconsTests.swift */; };
-		2828E226230E8E2700B2C532 /* HomeViewController+TableViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E225230E8E2700B2C532 /* HomeViewController+TableViewProtocols.swift */; };
+		2828E226230E8E2700B2C532 /* HomeViewController+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E225230E8E2700B2C532 /* HomeViewController+Protocols.swift */; };
 		2828E228230E901F00B2C532 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E227230E901F00B2C532 /* Constants.swift */; };
 		2828E22A230E950100B2C532 /* icons.json in Resources */ = {isa = PBXBuildFile; fileRef = 2828E229230E950100B2C532 /* icons.json */; };
 		2828E22D230E952200B2C532 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E22C230E952200B2C532 /* Icon.swift */; };
 		2828E230230E978200B2C532 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E22F230E978200B2C532 /* FileManager.swift */; };
+		2828E234230EB76700B2C532 /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E233230EB76700B2C532 /* KeychainPasswordItem.swift */; };
+		2828E236230EB88C00B2C532 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E235230EB88C00B2C532 /* UIViewController+Extension.swift */; };
+		2828E23A230EB9CE00B2C532 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E239230EB9CE00B2C532 /* LandingViewController.swift */; };
+		2828E23C230EB9DF00B2C532 /* LoginSingupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E23B230EB9DF00B2C532 /* LoginSingupViewController.swift */; };
+		2828E23E230EC56000B2C532 /* LoginSignupViewController+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E23D230EC56000B2C532 /* LoginSignupViewController+Protocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,11 +46,16 @@
 		2828E211230E88B900B2C532 /* CryptoIconsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoIconsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2828E215230E88B900B2C532 /* CryptoIconsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoIconsTests.swift; sourceTree = "<group>"; };
 		2828E217230E88B900B2C532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2828E225230E8E2700B2C532 /* HomeViewController+TableViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+TableViewProtocols.swift"; sourceTree = "<group>"; };
+		2828E225230E8E2700B2C532 /* HomeViewController+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Protocols.swift"; sourceTree = "<group>"; };
 		2828E227230E901F00B2C532 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2828E229230E950100B2C532 /* icons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = icons.json; sourceTree = "<group>"; };
 		2828E22C230E952200B2C532 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		2828E22F230E978200B2C532 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		2828E233230EB76700B2C532 /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
+		2828E235230EB88C00B2C532 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		2828E239230EB9CE00B2C532 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		2828E23B230EB9DF00B2C532 /* LoginSingupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSingupViewController.swift; sourceTree = "<group>"; };
+		2828E23D230EC56000B2C532 /* LoginSignupViewController+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginSignupViewController+Protocols.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				2828E224230E8ABA00B2C532 /* Home */,
+				2828E237230EB9A300B2C532 /* Landing */,
+				2828E238230EB9AA00B2C532 /* LoginSignup */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -146,7 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				2828E202230E88B900B2C532 /* HomeViewController.swift */,
-				2828E225230E8E2700B2C532 /* HomeViewController+TableViewProtocols.swift */,
+				2828E225230E8E2700B2C532 /* HomeViewController+Protocols.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -162,9 +174,36 @@
 		2828E22E230E96EF00B2C532 /* Uitilities */ = {
 			isa = PBXGroup;
 			children = (
+				2828E232230EB75000B2C532 /* Keychain */,
 				2828E22F230E978200B2C532 /* FileManager.swift */,
+				2828E235230EB88C00B2C532 /* UIViewController+Extension.swift */,
 			);
 			path = Uitilities;
+			sourceTree = "<group>";
+		};
+		2828E232230EB75000B2C532 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				2828E233230EB76700B2C532 /* KeychainPasswordItem.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		2828E237230EB9A300B2C532 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				2828E239230EB9CE00B2C532 /* LandingViewController.swift */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		2828E238230EB9AA00B2C532 /* LoginSignup */ = {
+			isa = PBXGroup;
+			children = (
+				2828E23B230EB9DF00B2C532 /* LoginSingupViewController.swift */,
+				2828E23D230EC56000B2C532 /* LoginSignupViewController+Protocols.swift */,
+			);
+			path = LoginSignup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,11 +308,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2828E236230EB88C00B2C532 /* UIViewController+Extension.swift in Sources */,
+				2828E23E230EC56000B2C532 /* LoginSignupViewController+Protocols.swift in Sources */,
 				2828E203230E88B900B2C532 /* HomeViewController.swift in Sources */,
-				2828E226230E8E2700B2C532 /* HomeViewController+TableViewProtocols.swift in Sources */,
+				2828E23C230EB9DF00B2C532 /* LoginSingupViewController.swift in Sources */,
+				2828E226230E8E2700B2C532 /* HomeViewController+Protocols.swift in Sources */,
 				2828E201230E88B900B2C532 /* AppDelegate.swift in Sources */,
+				2828E234230EB76700B2C532 /* KeychainPasswordItem.swift in Sources */,
 				2828E230230E978200B2C532 /* FileManager.swift in Sources */,
 				2828E22D230E952200B2C532 /* Icon.swift in Sources */,
+				2828E23A230EB9CE00B2C532 /* LandingViewController.swift in Sources */,
 				2828E228230E901F00B2C532 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
