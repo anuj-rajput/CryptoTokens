@@ -1,6 +1,6 @@
 //
 //  Constants.swift
-//  CryptoIcons
+//  CryptoTokens
 //
 //  Created by Anuj Rajput on 22/08/19.
 //  Copyright © 2019 Matic Network. All rights reserved.
@@ -37,7 +37,7 @@ enum Constants {
     }
     
     enum Files {
-        static let icons = "icons"
+        static let tokens = "tokens"
     }
     
     enum Keys {
@@ -47,5 +47,5 @@ enum Constants {
 }
 
 struct KeychainConfiguration {
-    static let serviceName = "CryptoIcons"
+    static let serviceName = "CryptoTokens"
 }

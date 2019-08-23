@@ -1,6 +1,6 @@
 //
 //  DetailViewController.swift
-//  CryptoIcons
+//  CryptoTokens
 //
 //  Created by Anuj Rajput on 23/08/19.
 //  Copyright © 2019 Matic Network. All rights reserved.
@@ -16,11 +16,11 @@ class DetailViewController: UIViewController {
     @IBOutlet var currencyCodeLabel: UILabel!
     
     // MARK: Data
-    var icon: Icon!
+    var token: Token!
     
     // MARK: Initializer
-    func configure(with icon: Icon) {
-        self.icon = icon
+    func configure(with token: Token) {
+        self.token = token
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -34,9 +34,9 @@ class DetailViewController: UIViewController {
     // MARK: View Hierarchy
     override func loadView() {
         super.loadView()
-        symbolImageView.image = UIImage(named: self.icon.symbol)
-        currencyNameLabel.text = self.icon.name
-        currencyCodeLabel.text = self.icon.script.uppercased()
+        symbolImageView.image = UIImage(named: self.token.symbol)
+        currencyNameLabel.text = self.token.name
+        currencyCodeLabel.text = self.token.script.uppercased()
     }
     
     override func viewDidLoad() {

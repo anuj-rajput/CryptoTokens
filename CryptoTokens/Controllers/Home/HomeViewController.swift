@@ -1,6 +1,6 @@
 //
 //  HomeViewController.swift
-//  CryptoIcons
+//  CryptoTokens
 //
 //  Created by Anuj Rajput on 22/08/19.
 //  Copyright © 2019 Matic Network. All rights reserved.
@@ -14,7 +14,7 @@ class HomeViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     
     // MARK: Data
-    var icons: [Icon]?
+    var tokens: [Token]?
     
     // MARK: Initializer
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -61,8 +61,8 @@ class HomeViewController: UIViewController {
     }
     
     private func loadData() {
-        if let icons = FileManager.getIconsFromStub() {
-            self.icons = icons
+        if let tokens = FileManager.getTokensFromStub() {
+            self.tokens = tokens
             tableView.reloadData()
         }
     }
@@ -107,7 +107,7 @@ class HomeViewController: UIViewController {
         guard let vc = storyboard?.instantiateViewController(withIdentifier: String(describing: DetailViewController.self)) as? DetailViewController else {
             fatalError("Couldn't load detail view controller")
         }
-        vc.configure(with: icons![index])
+        vc.configure(with: tokens![index])
         return vc
     }
 }

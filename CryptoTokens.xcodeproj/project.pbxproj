@@ -12,11 +12,11 @@
 		2828E206230E88B900B2C532 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2828E204230E88B900B2C532 /* Main.storyboard */; };
 		2828E208230E88B900B2C532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2828E207230E88B900B2C532 /* Assets.xcassets */; };
 		2828E20B230E88B900B2C532 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2828E209230E88B900B2C532 /* LaunchScreen.storyboard */; };
-		2828E216230E88B900B2C532 /* CryptoIconsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E215230E88B900B2C532 /* CryptoIconsTests.swift */; };
+		2828E216230E88B900B2C532 /* CryptoTokensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E215230E88B900B2C532 /* CryptoTokensTests.swift */; };
 		2828E226230E8E2700B2C532 /* HomeViewController+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E225230E8E2700B2C532 /* HomeViewController+Protocols.swift */; };
 		2828E228230E901F00B2C532 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E227230E901F00B2C532 /* Constants.swift */; };
-		2828E22A230E950100B2C532 /* icons.json in Resources */ = {isa = PBXBuildFile; fileRef = 2828E229230E950100B2C532 /* icons.json */; };
-		2828E22D230E952200B2C532 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E22C230E952200B2C532 /* Icon.swift */; };
+		2828E22A230E950100B2C532 /* tokens.json in Resources */ = {isa = PBXBuildFile; fileRef = 2828E229230E950100B2C532 /* tokens.json */; };
+		2828E22D230E952200B2C532 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E22C230E952200B2C532 /* Token.swift */; };
 		2828E230230E978200B2C532 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E22F230E978200B2C532 /* FileManager.swift */; };
 		2828E234230EB76700B2C532 /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E233230EB76700B2C532 /* KeychainPasswordItem.swift */; };
 		2828E236230EB88C00B2C532 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E235230EB88C00B2C532 /* UIViewController+Extension.swift */; };
@@ -43,20 +43,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2828E1FD230E88B900B2C532 /* CryptoIcons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoIcons.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2828E1FD230E88B900B2C532 /* CryptoTokens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoTokens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2828E200230E88B900B2C532 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2828E202230E88B900B2C532 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2828E205230E88B900B2C532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2828E207230E88B900B2C532 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2828E20A230E88B900B2C532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2828E20C230E88B900B2C532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2828E211230E88B900B2C532 /* CryptoIconsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoIconsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2828E215230E88B900B2C532 /* CryptoIconsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoIconsTests.swift; sourceTree = "<group>"; };
+		2828E211230E88B900B2C532 /* CryptoTokensTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoTokensTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2828E215230E88B900B2C532 /* CryptoTokensTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTokensTests.swift; sourceTree = "<group>"; };
 		2828E217230E88B900B2C532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2828E225230E8E2700B2C532 /* HomeViewController+Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Protocols.swift"; sourceTree = "<group>"; };
 		2828E227230E901F00B2C532 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		2828E229230E950100B2C532 /* icons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = icons.json; sourceTree = "<group>"; };
-		2828E22C230E952200B2C532 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		2828E229230E950100B2C532 /* tokens.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tokens.json; sourceTree = "<group>"; };
+		2828E22C230E952200B2C532 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		2828E22F230E978200B2C532 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		2828E233230EB76700B2C532 /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
 		2828E235230EB88C00B2C532 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -94,8 +94,8 @@
 		2828E1F4230E88B900B2C532 = {
 			isa = PBXGroup;
 			children = (
-				2828E1FF230E88B900B2C532 /* CryptoIcons */,
-				2828E214230E88B900B2C532 /* CryptoIconsTests */,
+				2828E1FF230E88B900B2C532 /* CryptoTokens */,
+				2828E214230E88B900B2C532 /* CryptoTokensTests */,
 				2828E1FE230E88B900B2C532 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,13 +103,13 @@
 		2828E1FE230E88B900B2C532 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2828E1FD230E88B900B2C532 /* CryptoIcons.app */,
-				2828E211230E88B900B2C532 /* CryptoIconsTests.xctest */,
+				2828E1FD230E88B900B2C532 /* CryptoTokens.app */,
+				2828E211230E88B900B2C532 /* CryptoTokensTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2828E1FF230E88B900B2C532 /* CryptoIcons */ = {
+		2828E1FF230E88B900B2C532 /* CryptoTokens */ = {
 			isa = PBXGroup;
 			children = (
 				2828E221230E8A5E00B2C532 /* Application */,
@@ -119,16 +119,16 @@
 				2828E222230E8A9600B2C532 /* Storyboards */,
 				2828E22E230E96EF00B2C532 /* Uitilities */,
 			);
-			path = CryptoIcons;
+			path = CryptoTokens;
 			sourceTree = "<group>";
 		};
-		2828E214230E88B900B2C532 /* CryptoIconsTests */ = {
+		2828E214230E88B900B2C532 /* CryptoTokensTests */ = {
 			isa = PBXGroup;
 			children = (
-				2828E215230E88B900B2C532 /* CryptoIconsTests.swift */,
+				2828E215230E88B900B2C532 /* CryptoTokensTests.swift */,
 				2828E217230E88B900B2C532 /* Info.plist */,
 			);
-			path = CryptoIconsTests;
+			path = CryptoTokensTests;
 			sourceTree = "<group>";
 		};
 		2828E220230E88C900B2C532 /* Resources */ = {
@@ -136,7 +136,7 @@
 			children = (
 				2828E207230E88B900B2C532 /* Assets.xcassets */,
 				2828E209230E88B900B2C532 /* LaunchScreen.storyboard */,
-				2828E229230E950100B2C532 /* icons.json */,
+				2828E229230E950100B2C532 /* tokens.json */,
 				2828E20C230E88B900B2C532 /* Info.plist */,
 			);
 			path = Resources;
@@ -182,7 +182,7 @@
 		2828E22B230E951300B2C532 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2828E22C230E952200B2C532 /* Icon.swift */,
+				2828E22C230E952200B2C532 /* Token.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -240,9 +240,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2828E1FC230E88B900B2C532 /* CryptoIcons */ = {
+		2828E1FC230E88B900B2C532 /* CryptoTokens */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2828E21A230E88B900B2C532 /* Build configuration list for PBXNativeTarget "CryptoIcons" */;
+			buildConfigurationList = 2828E21A230E88B900B2C532 /* Build configuration list for PBXNativeTarget "CryptoTokens" */;
 			buildPhases = (
 				2828E1F9230E88B900B2C532 /* Sources */,
 				2828E1FA230E88B900B2C532 /* Frameworks */,
@@ -252,14 +252,14 @@
 			);
 			dependencies = (
 			);
-			name = CryptoIcons;
+			name = CryptoTokens;
 			productName = CryptoIcons;
-			productReference = 2828E1FD230E88B900B2C532 /* CryptoIcons.app */;
+			productReference = 2828E1FD230E88B900B2C532 /* CryptoTokens.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2828E210230E88B900B2C532 /* CryptoIconsTests */ = {
+		2828E210230E88B900B2C532 /* CryptoTokensTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2828E21D230E88B900B2C532 /* Build configuration list for PBXNativeTarget "CryptoIconsTests" */;
+			buildConfigurationList = 2828E21D230E88B900B2C532 /* Build configuration list for PBXNativeTarget "CryptoTokensTests" */;
 			buildPhases = (
 				2828E20D230E88B900B2C532 /* Sources */,
 				2828E20E230E88B900B2C532 /* Frameworks */,
@@ -270,9 +270,9 @@
 			dependencies = (
 				2828E213230E88B900B2C532 /* PBXTargetDependency */,
 			);
-			name = CryptoIconsTests;
+			name = CryptoTokensTests;
 			productName = CryptoIconsTests;
-			productReference = 2828E211230E88B900B2C532 /* CryptoIconsTests.xctest */;
+			productReference = 2828E211230E88B900B2C532 /* CryptoTokensTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -294,7 +294,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2828E1F8230E88B900B2C532 /* Build configuration list for PBXProject "CryptoIcons" */;
+			buildConfigurationList = 2828E1F8230E88B900B2C532 /* Build configuration list for PBXProject "CryptoTokens" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -307,8 +307,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2828E1FC230E88B900B2C532 /* CryptoIcons */,
-				2828E210230E88B900B2C532 /* CryptoIconsTests */,
+				2828E1FC230E88B900B2C532 /* CryptoTokens */,
+				2828E210230E88B900B2C532 /* CryptoTokensTests */,
 			);
 		};
 /* End PBXProject section */
@@ -320,7 +320,7 @@
 			files = (
 				2828E20B230E88B900B2C532 /* LaunchScreen.storyboard in Resources */,
 				2828E208230E88B900B2C532 /* Assets.xcassets in Resources */,
-				2828E22A230E950100B2C532 /* icons.json in Resources */,
+				2828E22A230E950100B2C532 /* tokens.json in Resources */,
 				2828E206230E88B900B2C532 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,7 +351,7 @@
 				2828E234230EB76700B2C532 /* KeychainPasswordItem.swift in Sources */,
 				2828E259230F358B00B2C532 /* DetailViewController.swift in Sources */,
 				2828E230230E978200B2C532 /* FileManager.swift in Sources */,
-				2828E22D230E952200B2C532 /* Icon.swift in Sources */,
+				2828E22D230E952200B2C532 /* Token.swift in Sources */,
 				2828E23A230EB9CE00B2C532 /* LandingViewController.swift in Sources */,
 				2828E253230EDF3600B2C532 /* InternetProtocol.swift in Sources */,
 				2828E251230EDF3600B2C532 /* SecureStoreQueryable.swift in Sources */,
@@ -364,7 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2828E216230E88B900B2C532 /* CryptoIconsTests.swift in Sources */,
+				2828E216230E88B900B2C532 /* CryptoTokensTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +373,7 @@
 /* Begin PBXTargetDependency section */
 		2828E213230E88B900B2C532 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2828E1FC230E88B900B2C532 /* CryptoIcons */;
+			target = 2828E1FC230E88B900B2C532 /* CryptoTokens */;
 			targetProxy = 2828E212230E88B900B2C532 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -520,12 +520,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6P96AE4Y52;
-				INFOPLIST_FILE = CryptoIcons/Resources/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CryptoTokens/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = network.matic.CryptoIcons;
+				PRODUCT_BUNDLE_IDENTIFIER = network.matic.CryptoTokens;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -538,12 +538,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6P96AE4Y52;
-				INFOPLIST_FILE = CryptoIcons/Resources/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CryptoTokens/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = network.matic.CryptoIcons;
+				PRODUCT_BUNDLE_IDENTIFIER = network.matic.CryptoTokens;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -567,7 +567,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoIcons.app/CryptoIcons";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoTokens.app/CryptoTokens";
 			};
 			name = Debug;
 		};
@@ -588,14 +588,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoIcons.app/CryptoIcons";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CryptoTokens.app/CryptoTokens";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2828E1F8230E88B900B2C532 /* Build configuration list for PBXProject "CryptoIcons" */ = {
+		2828E1F8230E88B900B2C532 /* Build configuration list for PBXProject "CryptoTokens" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2828E218230E88B900B2C532 /* Debug */,
@@ -604,7 +604,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2828E21A230E88B900B2C532 /* Build configuration list for PBXNativeTarget "CryptoIcons" */ = {
+		2828E21A230E88B900B2C532 /* Build configuration list for PBXNativeTarget "CryptoTokens" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2828E21B230E88B900B2C532 /* Debug */,
@@ -613,7 +613,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2828E21D230E88B900B2C532 /* Build configuration list for PBXNativeTarget "CryptoIconsTests" */ = {
+		2828E21D230E88B900B2C532 /* Build configuration list for PBXNativeTarget "CryptoTokensTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2828E21E230E88B900B2C532 /* Debug */,

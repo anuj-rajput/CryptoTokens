@@ -1,15 +1,15 @@
 //
-//  CryptoIconsTests.swift
-//  CryptoIconsTests
+//  CryptoTokensTests.swift
+//  CryptoTokensTests
 //
 //  Created by Anuj Rajput on 22/08/19.
 //  Copyright © 2019 Matic Network. All rights reserved.
 //
 
 import XCTest
-@testable import CryptoIcons
+@testable import CryptoTokens
 
-class CryptoIconsTests: XCTestCase {
+class CryptoTokensTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

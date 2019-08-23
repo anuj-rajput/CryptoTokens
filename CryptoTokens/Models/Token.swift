@@ -1,6 +1,6 @@
 //
-//  Icon.swift
-//  CryptoIcons
+//  Token.swift
+//  CryptoTokens
 //
 //  Created by Anuj Rajput on 22/08/19.
 //  Copyright © 2019 Matic Network. All rights reserved.
@@ -8,13 +8,13 @@
 
 import Foundation
 
-struct Icon {
+struct Token {
     let name: String
     let script: String
     let symbol: String
 }
 
-extension Icon: Decodable {
+extension Token: Decodable {
     enum CodingKeys: String, CodingKey {
         case name
         case script = "subscript"
