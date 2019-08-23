@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -29,6 +29,7 @@
 		2828E252230EDF3600B2C532 /* SecureStoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E24D230EDF3600B2C532 /* SecureStoreError.swift */; };
 		2828E253230EDF3600B2C532 /* InternetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E24E230EDF3600B2C532 /* InternetProtocol.swift */; };
 		2828E256230EE12200B2C532 /* AESCrypter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E255230EE12200B2C532 /* AESCrypter.swift */; };
+		2828E259230F358B00B2C532 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E258230F358B00B2C532 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		2828E24D230EDF3600B2C532 /* SecureStoreError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureStoreError.swift; sourceTree = "<group>"; };
 		2828E24E230EDF3600B2C532 /* InternetProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetProtocol.swift; sourceTree = "<group>"; };
 		2828E255230EE12200B2C532 /* AESCrypter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AESCrypter.swift; sourceTree = "<group>"; };
+		2828E258230F358B00B2C532 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 		2828E223230E8AA900B2C532 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2828E257230F357E00B2C532 /* Detail */,
 				2828E224230E8ABA00B2C532 /* Home */,
 				2828E237230EB9A300B2C532 /* Landing */,
 				2828E238230EB9AA00B2C532 /* LoginSignup */,
@@ -232,6 +235,14 @@
 				2828E255230EE12200B2C532 /* AESCrypter.swift */,
 			);
 			path = AESCrypter;
+			sourceTree = "<group>";
+		};
+		2828E257230F357E00B2C532 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				2828E258230F358B00B2C532 /* DetailViewController.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +356,7 @@
 				2828E252230EDF3600B2C532 /* SecureStoreError.swift in Sources */,
 				2828E201230E88B900B2C532 /* AppDelegate.swift in Sources */,
 				2828E234230EB76700B2C532 /* KeychainPasswordItem.swift in Sources */,
+				2828E259230F358B00B2C532 /* DetailViewController.swift in Sources */,
 				2828E230230E978200B2C532 /* FileManager.swift in Sources */,
 				2828E256230EE12200B2C532 /* AESCrypter.swift in Sources */,
 				2828E22D230E952200B2C532 /* Icon.swift in Sources */,

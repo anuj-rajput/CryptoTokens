@@ -41,6 +41,63 @@
             </objects>
             <point key="canvasLocation" x="2803" y="846"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="SUV-Co-W8k">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="4Um-Oi-uwq" customClass="DetailViewController" customModule="CryptoIcons" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OQh-Vr-922">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="crn-a4-55l">
+                                <rect key="frame" x="79" y="207" width="256" height="482"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="matic" translatesAutoresizingMaskIntoConstraints="NO" id="o4e-Do-FXf">
+                                        <rect key="frame" x="0.0" y="0.0" width="256" height="382"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="256" id="pE0-ba-Jbm"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matic Network" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcX-1h-AnX">
+                                        <rect key="frame" x="0.0" y="402" width="256" height="36"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MATIC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpj-sS-wHl">
+                                        <rect key="frame" x="0.0" y="458" width="256" height="24"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="pcX-1h-AnX" firstAttribute="leading" secondItem="crn-a4-55l" secondAttribute="leading" id="4zH-gP-Nto"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hpj-sS-wHl" secondAttribute="trailing" id="9eu-T6-QhB"/>
+                                    <constraint firstItem="Hpj-sS-wHl" firstAttribute="leading" secondItem="crn-a4-55l" secondAttribute="leading" id="ddD-w1-sjL"/>
+                                    <constraint firstAttribute="trailing" secondItem="pcX-1h-AnX" secondAttribute="trailing" id="r3U-VG-Np0"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="crn-a4-55l" firstAttribute="centerY" secondItem="OQh-Vr-922" secondAttribute="centerY" id="5sg-Kw-GmG"/>
+                            <constraint firstItem="crn-a4-55l" firstAttribute="centerX" secondItem="OQh-Vr-922" secondAttribute="centerX" id="HrJ-TW-kdw"/>
+                            <constraint firstItem="3FE-9b-hOU" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="crn-a4-55l" secondAttribute="trailing" id="aPd-kD-Q0a"/>
+                            <constraint firstItem="crn-a4-55l" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3FE-9b-hOU" secondAttribute="leading" id="asw-I4-ydl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3FE-9b-hOU"/>
+                    </view>
+                    <connections>
+                        <outlet property="currencyCodeLabel" destination="Hpj-sS-wHl" id="Iih-go-tz5"/>
+                        <outlet property="currencyNameLabel" destination="pcX-1h-AnX" id="9WK-h0-fja"/>
+                        <outlet property="symbolImageView" destination="o4e-Do-FXf" id="shT-mq-fbq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U6h-2l-M8k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3630" y="846"/>
+        </scene>
         <!--Landing View Controller-->
         <scene sceneID="ck9-Fo-Pla">
             <objects>
@@ -169,4 +226,7 @@
             <point key="canvasLocation" x="186.95652173913044" y="846.42857142857144"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="matic" width="485" height="382"/>
+    </resources>
 </document>

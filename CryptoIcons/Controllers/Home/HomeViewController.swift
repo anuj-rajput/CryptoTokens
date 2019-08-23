@@ -29,6 +29,7 @@ class HomeViewController: UIViewController {
     override func loadView() {
         super.loadView()
         loadTableView()
+        loadPreviewing()
         loadUI()
         configureLongPressGesture()
     }
@@ -48,6 +49,10 @@ class HomeViewController: UIViewController {
         tableView.tableFooterView = UIView()
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: Constants.ReuseIdentifiers.HomeTableViewCell)
+    }
+    
+    private func loadPreviewing() {
+        registerForPreviewing(with: self, sourceView: tableView)
     }
     
     private func loadUI() {
@@ -80,19 +85,19 @@ class HomeViewController: UIViewController {
         if gestureRecognizer.state == .began {
             let touchPoint = gestureRecognizer.location(in: tableView)
             if let indexPath = tableView.indexPathForRow(at: touchPoint) {
-                presentDetailView(from: indexPath)
+                let vc = presentDetailScene(for: indexPath.row)
+                navigationController?.pushViewController(vc, animated: true)
             }
         }
     }
     
     // MARK: Navigation
-    func presentDetailView(from indexPath: IndexPath) {
-        // TODO: Presenting Detail View Logic
-        print(indexPath.row)
-        let alertController = UIAlertController(title: "nil", message:"Long-Press Gesture Detected", preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: .default,handler: nil))
-        
-        present(alertController, animated: true, completion: nil)
+    func presentDetailScene(for index: Int) -> DetailViewController {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: String(describing: DetailViewController.self)) as? DetailViewController else {
+            fatalError("Couldn't load detail view controller")
+        }
+        vc.configure(with: icons![index])
+        return vc
     }
 }
 
