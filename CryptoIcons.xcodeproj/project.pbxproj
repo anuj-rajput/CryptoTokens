@@ -29,6 +29,7 @@
 		2828E252230EDF3600B2C532 /* SecureStoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E24D230EDF3600B2C532 /* SecureStoreError.swift */; };
 		2828E253230EDF3600B2C532 /* InternetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E24E230EDF3600B2C532 /* InternetProtocol.swift */; };
 		2828E259230F358B00B2C532 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E258230F358B00B2C532 /* DetailViewController.swift */; };
+		2828E25B230FDDFB00B2C532 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2828E25A230FDDFB00B2C532 /* AES.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		2828E24D230EDF3600B2C532 /* SecureStoreError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureStoreError.swift; sourceTree = "<group>"; };
 		2828E24E230EDF3600B2C532 /* InternetProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetProtocol.swift; sourceTree = "<group>"; };
 		2828E258230F358B00B2C532 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		2828E25A230FDDFB00B2C532 /* AES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				2828E232230EB75000B2C532 /* Keychain */,
+				2828E25A230FDDFB00B2C532 /* AES.swift */,
 				2828E22F230E978200B2C532 /* FileManager.swift */,
 				2828E235230EB88C00B2C532 /* UIViewController+Extension.swift */,
 			);
@@ -337,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2828E24F230EDF3600B2C532 /* InternetAuthenticationType.swift in Sources */,
+				2828E25B230FDDFB00B2C532 /* AES.swift in Sources */,
 				2828E236230EB88C00B2C532 /* UIViewController+Extension.swift in Sources */,
 				2828E23E230EC56000B2C532 /* LoginSignupViewController+Protocols.swift in Sources */,
 				2828E203230E88B900B2C532 /* HomeViewController.swift in Sources */,
