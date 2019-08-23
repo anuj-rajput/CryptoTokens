@@ -97,7 +97,7 @@ class HomeViewController: UIViewController {
             let touchPoint = gestureRecognizer.location(in: tableView)
             if let indexPath = tableView.indexPathForRow(at: touchPoint) {
                 let vc = presentDetailScene(for: indexPath.row)
-                navigationController?.pushViewController(vc, animated: true)
+                PeekView.viewForController(parentViewController: self, contentViewController: vc, expectedContentViewFrame: CGRect(x: self.view.frame.midX - 140, y: self.view.frame.midY - 200, width: 280, height: 400), fromGesture: gestureRecognizer, shouldHideStatusBar: true, menuOptions: nil, completionHandler: nil, dismissHandler: nil)
             }
         }
     }
