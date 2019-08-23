@@ -5,7 +5,7 @@ I'm Anuj, and first of all I'd like to thank you for letting me participate in y
 # Goals
 Our aim in this challenge was to build an app which demonstrates storing and retrieving data from Keychain and encrypting plain text values.
 
-![](https://i.imgur.com/2UatcLY.gif)
+![](https://thumbs.gfycat.com/LightFaithfulIbex-size_restricted.gif)
 
 # Things I think I’ve done well
 
