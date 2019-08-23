@@ -21,6 +21,7 @@ enum Constants {
         static let Password = NSLocalizedString("Password", comment: "")
         static let Error = NSLocalizedString("Error", comment: "")
         static let UserPassNotFound = NSLocalizedString("Username/Password not found", comment: "")
+        static let Hash = NSLocalizedString("Hash", comment: "")
     }
     
     enum Duration {
@@ -40,7 +41,8 @@ enum Constants {
     }
     
     enum Keys {
-        static let salt = "CoyXFQj+(o.nUNQhVP7N"
+        static let aesKey = "FiugQTgPNwCWUY,VhfmM4cKXTLVFvHFe"
+        static let keychainHash = "keychainHash"
     }
 }
 

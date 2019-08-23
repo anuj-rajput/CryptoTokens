@@ -77,7 +77,18 @@ class HomeViewController: UIViewController {
     // MARK: Actions
     @objc
     func showHashButtonTapped() {
-        // TODO: Show hash in action controller
+        do {
+            let keychain = SecureStore(secureStoreQueryable: GenericPasswordQueryable(service: KeychainConfiguration.serviceName))
+            guard let base64EncodedString = try keychain.getValue(for: Constants.Keys.keychainHash) else { return }
+            let encryptedData: Data = Data(base64Encoded: base64EncodedString)!
+            
+            let aes = try AES(keyString: Constants.Keys.aesKey)
+            let decryptedData: String = try aes.decrypt(encryptedData)
+            let plainText = decryptedData.split(separator: ",")
+            showAlert(title: Constants.Strings.Hash, description: "Encrypted base64: \(base64EncodedString)\nUsername: \(plainText[0])\nPassword: \(plainText[1])")
+        } catch {
+            print("Something went wrong: \(error)")
+        }
     }
     
     @objc

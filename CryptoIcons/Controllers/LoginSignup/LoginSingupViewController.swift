@@ -92,7 +92,14 @@ class LoginSingupViewController: UIViewController {
             } catch (let error) {
                 fatalError("Saving username and password failed with \(error.localizedDescription)")
             }
-            // TODO: Save encrypted credentials and hash in Keychain
+            
+            do {
+                let aes = try AES(keyString: Constants.Keys.aesKey)
+                let encryptedData: Data = try aes.encrypt("\(username),\(password)")
+                try keychain.setValue(encryptedData.base64EncodedString(), for: Constants.Keys.keychainHash)                
+            } catch {
+                print("Something went wrong: \(error)")
+            }
         }
     }
     
