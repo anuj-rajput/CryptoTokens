@@ -79,9 +79,13 @@ class LoginSingupViewController: UIViewController {
                     if pass == password {
                         presentHomeScene()
                     } else {
+                        // Password doesn't match the username/password key-value pair
                         showAlert(title: Constants.Strings.Error, description: Constants.Strings.UserPassNotFound)
                     }
-                } 
+                } else {
+                    // Username not found
+                    showAlert(title: Constants.Strings.Error, description: Constants.Strings.UserPassNotFound)
+                }
             } catch (let error) {
                 fatalError("Retrieving username and password failed with \(error.localizedDescription)")
             }
